@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7,IE=9">
+    <!--The viewport meta tag is used to improve the presentation and
+      behavior of the samples on iOS devices-->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no">
+    <title>中国近年各省市GDP增速变化</title>
+
+    <link rel="stylesheet" href="http://tm.arcgisonline.cn:8038/App1/arcgis_js_v34_api/library/3.4/3.4/js/esri/css/esri.css">
+  	<link rel="stylesheet" href="css/main.css" />
+  	
+    <script>var dojoConfig = { parseOnLoad: true };</script>
+    <script src="http://tm.arcgisonline.cn:8038/App1/arcgis_js_v34_api/library/3.4/3.4/init.js"></script>
+  	<script src="js/main.js"></script>
+  </head>
+
+  <body>
+    <div id="loading">
+      <div id="loadingMessage">
+        正在加载数据.....
+        <br>
+        <img src="images/loading.gif">
+      </div>
+    </div>
+    
+    
+    <span style="position: absolute;color: white;font-size: 26px;font-weight:微软雅黑;line-height: 62px;left:30px;z-index: 10;">ArcGIS Web API 特性之高性能</span>
+  	<div style="width:100%;margin:0 auto;overflow: auto; ">
+  		<div style="width: 728px;float: right;background: url('images/bannerRight.png');height: 62px; "></div>
+ 		<div style="margin-right: 728px;height:62px;background: url('images/bannerBg.png') repeat;color: white;font-size: 26px;font-weight:微软雅黑;line-height: 62px;"></div>
+  	</div>
+    <div id="mainWindow" data-dojo-type="dijit.layout.BorderContainer" data-dojo-props="'design': 'headline', 'gutters': false" style="position: absolute;top: 62px;bottom: 0px;">
+      <div id="map" data-dojo-type="dijit.layout.ContentPane" data-dojo-props="'region': 'center'">
+
+        <div id="feedback" class="shadow">
+          时间: 
+          <span id="currentYear">
+            <img src="images/loading.gif">
+          </span> | 
+          <span id="play"><img src="http://cdn1.iconfinder.com/data/icons/Tabs_Color_Social/40/Arrow-Right.png"></span>
+          <span id="pause"><img src="http://cdn1.iconfinder.com/data/icons/Tabs_Color_Social/40/Pause.png"></span>
+          <div id="legend"></div>
+          <div>
+            <span id="slower"><img src="http://cdn1.iconfinder.com/data/icons/Tabs_Color_Social/40/Previous-Track.png" style="vertical-align: middle"></span>
+            速度
+            <span id="faster"><img src="http://cdn1.iconfinder.com/data/icons/Tabs_Color_Social/40/Next-Track.png" style="vertical-align: middle"></span></div>
+        </div>
+
+      </div> <!-- end map div -->
+    </div> <!-- end border container div -->
+  </body>
+</html>

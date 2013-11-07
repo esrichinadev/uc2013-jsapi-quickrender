@@ -1,0 +1,70 @@
+  html, body, #mainWindow {
+    height: 100%; width: 100%; margin: 0; padding: 0;
+  }
+  body{
+    background-color:white; overflow:hidden; font-family: "Trebuchet MS";
+  }
+  #loading {
+    background: #fff;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+  }
+  #loadingMessage {
+    color: #000;
+    margin: 0 auto;
+    padding: 150px 0 0 0;
+    text-align: center;
+    width: 200px;
+  }
+  .shadow{
+    -moz-box-shadow: 0 0 5px #888;
+    -webkit-box-shadow: 0 0 5px #888;
+    box-shadow: 0 0 5px #888;
+  }
+  #map {
+    background-color:white;
+  }
+  #feedback {
+    background: #fff;
+    color: #000;
+    font-family: arial;
+    height: auto;
+    left: 30px;
+    margin: 5px;
+    padding: 10px;
+    position: absolute;
+    text-align: center;
+    top: 30px;
+    visibility: hidden;
+    width: 200px;
+    z-index: 10;
+  }
+  #currentYear {
+    display: inline-block;
+    height: 25px;
+    text-align: center;
+    width: 50px;
+  }
+  #play, #pause {
+    cursor: pointer;
+    display: none;
+    width: 50px;
+    vertical-align: middle;
+  }
+  #legend {
+    padding: 10px 0 0 0;
+  }
+  #legend table table td {
+    text-align: left;
+  }
+
+.esriPopup .contentPane {
+	font-size: 20px;
+}
+
+.esriPopup .actionsPane .action {
+	font-size: 18px;
+}
